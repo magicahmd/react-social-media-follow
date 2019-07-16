@@ -1,6 +1,6 @@
 {
   "name": "react-social-media-follow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "To make all your social media accessable just in one component.",
   "main": "build/index.js",
   "repository": {

@@ -72,7 +72,6 @@ ${console.log(hoverColor)}
 
 const FollowAt = props => {
   const { computedStyles, links, iconSize } = props;
-  console.log(props)
   return (
     <div className={computedStyles.socialContainer}>
       {links.map((link,index) => {

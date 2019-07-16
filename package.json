@@ -9,7 +9,7 @@
     "react-scripts": "3.0.1",
     "react-social-media-follow": "^1.0.1"
   },
-  "homepage": "https://github.com/magicahmd/react-social-media-follow",
+  "homepage": "https://magicahmd.github.io/react-social-media-follow/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -50,7 +50,6 @@ const styles = ({ color, hoverColor, hoverMove }) => ({
 
   Facebook: css`
     color: ${color || "#4968ad"};
-${console.log(hoverColor)}
   `,
 
   Youtube: css`

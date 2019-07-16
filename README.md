@@ -4,7 +4,7 @@ a list of different social media.
 
 ## Demo
 
-[<img src="https://i.imgur.com/ZwZq2Ip.png" width="100%" />]
+<img src="https://i.imgur.com/ZwZq2Ip.png" />
 
 Checkout the demo:
 https://magicahmd.github.io/react-social-media-follow/

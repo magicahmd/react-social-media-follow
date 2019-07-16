@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "emotion";
 import withStyles from "withstyles";
+import PropTypes from 'prop-types'; // ES6
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -32,7 +33,7 @@ const getIcon = domain => {
   }
 };
 
-const styles = ({ color, hoverColor }) => ({
+const styles = ({ color, hoverColor, hoverMove }) => ({
   socialContainer: css`
     padding: 25px 50px;
   `,
@@ -42,13 +43,14 @@ const styles = ({ color, hoverColor }) => ({
     transition: transform 250ms;
     display: inline-block;
     &:hover {
-      transform: translateY(-2px);
+      transform: ${hoverMove===undefined && 'translateY(-2px)' || hoverMove ? 'translateY(-2px)' : ''};
       color: ${hoverColor};
     }
   `,
 
   Facebook: css`
     color: ${color || "#4968ad"};
+${console.log(hoverColor)}
   `,
 
   Youtube: css`
@@ -69,12 +71,13 @@ const styles = ({ color, hoverColor }) => ({
 });
 
 const FollowAt = props => {
-  const { computedStyles, links } = props;
-  console.log(props);
+  const { computedStyles, links, iconSize } = props;
+  console.log(props)
   return (
     <div className={computedStyles.socialContainer}>
       {links.map((link,index) => {
         let socailMedia = domainName(link);
+        let icon = getIcon(socailMedia);
         return (
           <a
             key={index}
@@ -83,42 +86,24 @@ const FollowAt = props => {
               computedStyles[socailMedia]
             }`}
           >
-            <FontAwesomeIcon icon={getIcon(socailMedia)} size="2x" />
+            <FontAwesomeIcon icon={icon} size={`${iconSize}x`} />
           </a>
         );
       })}
-      <a
-        href="https://www.youtube.com/c/jamesqquick"
-        className={`${computedStyles.social} ${computedStyles.Youtube}`}
-      >
-        <FontAwesomeIcon icon={faYoutube} size="2x" />
-      </a>
-      <a
-        href="https://www.youtube.com/c/jamesqquick"
-        className={`${computedStyles.social} ${computedStyles.Facebook}`}
-      >
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
-      </a>
-      <a
-        href="https://www.youtube.com/c/jamesqquick"
-        className={`${computedStyles.social} ${computedStyles.Twitter}`}
-      >
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
-      </a>
-      <a
-        href="https://www.youtube.com/c/jamesqquick"
-        className={`${computedStyles.social} ${computedStyles.Instagram}`}
-      >
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </a>
-      <a
-        href="https://www.youtube.com/c/jamesqquick"
-        className={`${computedStyles.social} ${computedStyles.Tumblr}`}
-      >
-        <FontAwesomeIcon icon={faTumblr} size="2x" />
-      </a>
     </div>
   );
+};
+
+FollowAt.propTypes = {
+  links: PropTypes.array.isRequired,
+  iconSize: PropTypes.number,
+  color: PropTypes.string,
+  hoverMove: PropTypes.bool,
+};
+
+FollowAt.defaultProps = {
+  iconSize: 2,
+  hoverMove: true,
 };
 
 export default withStyles(styles)(FollowAt);

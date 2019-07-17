@@ -1,6 +1,6 @@
 # React Social Media Follow
 
-a list of different social media.
+To make all your social media links accessable just in one component.
 
 ## Demo
 
@@ -42,8 +42,9 @@ Common props you may want to specify include:
 - `color` - the color of social media icons.
 - `hoverColor` - the color of social media icons at hover.
 - `iconSize` - the size of social media icons. (1-10)
+- `spacing` - the space between of social media icons.
 
 ## Thanks
 
-Thanks to everyone who would use it.
-Made with ❤️ by Ahmd.
+- Thanks to everyone who would use it.
+- Made with ❤️ by Ahmd.

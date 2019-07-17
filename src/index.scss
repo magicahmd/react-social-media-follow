@@ -1,0 +1,64 @@
+$heading-typeface: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$body-typeface: Georgia, Times, "Times New Roman", serif;
+$color: #333;
+
+@mixin box-sizing {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 20px;
+}
+
+html {
+	@include box-sizing;
+}
+
+*,
+*:before,
+*:after {
+	@include box-sizing;
+}
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	background-color: $color;
+	font-family: $body-typeface;
+	color: $color;
+}
+
+.container {
+	position: relative;
+	top: 5%;
+	width: 100%;
+	height: 100vh;
+	min-width: 320px;
+	min-height: 320px;
+}
+
+.square {
+	// This is the magic bit
+	margin: 0 auto;
+	max-width: 50%;
+	min-height: 100vh;
+	position: relative;
+ 	background: #e7e7e7;
+	text-align: center;
+	overflow: hidden;
+	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.33333);
+}
+
+.follow-container {
+	margin: 40px;
+}
+
+.square-inn {
+	width: 100%;
+	padding: 1rem;
+}
+
+.example-text {
+	font-size: 16px;
+}

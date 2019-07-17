@@ -31,7 +31,7 @@ function App() {
             <FollowAt links={links} color="white" hoverColor="black" />
           </div>
           <div>
-            <p className="example-text">with hoverMove={false}:</p>
+            <p className="example-text">with hoverMove=false:</p>
             <FollowAt links={links} hoverMove={false} />
           </div>
           <div>

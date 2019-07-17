@@ -8,7 +8,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "react-social-media-follow": "^1.0.1"
+    "react-social-media-follow": "^1.1.0"
   },
   "homepage": "https://magicahmd.github.io/react-social-media-follow/",
   "scripts": {

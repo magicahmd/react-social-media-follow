@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-social-media-follow/static/css/main.b3226a57.chunk.css",
-    "main.js": "/react-social-media-follow/static/js/main.312656b9.chunk.js",
-    "main.js.map": "/react-social-media-follow/static/js/main.312656b9.chunk.js.map",
+    "main.js": "/react-social-media-follow/static/js/main.b8a831e9.chunk.js",
+    "main.js.map": "/react-social-media-follow/static/js/main.b8a831e9.chunk.js.map",
     "runtime~main.js": "/react-social-media-follow/static/js/runtime~main.8cfd28fb.js",
     "runtime~main.js.map": "/react-social-media-follow/static/js/runtime~main.8cfd28fb.js.map",
     "static/js/2.836259ae.chunk.js": "/react-social-media-follow/static/js/2.836259ae.chunk.js",
     "static/js/2.836259ae.chunk.js.map": "/react-social-media-follow/static/js/2.836259ae.chunk.js.map",
     "index.html": "/react-social-media-follow/index.html",
-    "precache-manifest.8d5c244f4c27ae68526770b6cde2bdc6.js": "/react-social-media-follow/precache-manifest.8d5c244f4c27ae68526770b6cde2bdc6.js",
+    "precache-manifest.f04030fec94b50f570d465c112bb37b8.js": "/react-social-media-follow/precache-manifest.f04030fec94b50f570d465c112bb37b8.js",
     "service-worker.js": "/react-social-media-follow/service-worker.js",
     "static/css/main.b3226a57.chunk.css.map": "/react-social-media-follow/static/css/main.b3226a57.chunk.css.map"
   }

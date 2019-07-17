@@ -1,6 +1,6 @@
 {
   "name": "react-social-media-follow",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "To make all your social media accessable just in one component.",
   "main": "build/index.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/magicahmd/react-social-media-follow"
   },
   "peerDependencies": {
-    "react": "^16.4.0"
+    "react": "^16.8.0"
   },
   "scripts": {
     "start": "webpack --watch",
@@ -20,13 +20,10 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "emotion": "^10.0.14",
     "extract-domain": "^2.2.1",
     "prop-types": "^15.7.2",
-    "react": "^16.4.0",
     "webpack": "^4.28.4",
     "withstyles": "^1.0.3"
   },
@@ -37,6 +34,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
-    "webpack-cli": "^3.0.4"
+    "webpack-cli": "^3.0.4",
+    "react": "^16.4.0"
   }
 }

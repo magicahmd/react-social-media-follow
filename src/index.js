@@ -4,30 +4,28 @@ import withStyles from 'withstyles';
 import PropTypes from 'prop-types';
 import extractDomain from 'extract-domain';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faYoutube,
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faTumblr,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
+import Facebook from './icons/Facebook'
+import Twitter from './icons/Twitter'
+import Youtube from './icons/Youtube'
+import Instagram from './icons/Instagram'
+import Tumblr from './icons/Tumblr'
+import Github from './icons/Github'
 
 
 const getIcon = domain => {
   switch (domain) {
     case 'facebook.com':
-      return faFacebook;
+      return Facebook;
     case 'twitter.com':
-      return faTwitter;
+      return Twitter;
     case 'youtube.com':
-      return faYoutube;
+      return Youtube;
     case 'instagram.com':
-      return faInstagram;
+      return Instagram;
     case 'tumblr.com':
-      return faTumblr;
+      return Tumblr;
     case 'github.com':
-      return faGithub;
+      return Github;
     default:
       return;
   }

@@ -74,7 +74,7 @@ const styles = ({ color, hoverColor, hoverMove, spacing }) => ({
   `,
 
   'linkedin.com': css`
-    color: ${color || 'blue'};
+    color: ${color || '#0e76a8'};
   `,
 
 });

@@ -10,10 +10,13 @@ import Youtube from './icons/Youtube'
 import Instagram from './icons/Instagram'
 import Tumblr from './icons/Tumblr'
 import Github from './icons/Github'
+import LinkedIn from './icons/LinkedIn';
 
 
 const getIcon = domain => {
   switch (domain) {
+    case 'linkedin.com':
+      return LinkedIn
     case 'facebook.com':
       return Facebook;
     case 'twitter.com':
@@ -68,6 +71,10 @@ const styles = ({ color, hoverColor, hoverMove, spacing }) => ({
 
   'github.com': css`
     color: ${color || 'black'};
+  `,
+
+  'linkedin.com': css`
+    color: ${color || '#0e76a8'};
   `,
 
 });
